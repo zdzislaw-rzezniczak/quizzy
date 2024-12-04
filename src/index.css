@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Parkinsans', sans-serif;
+}
+
+body {
+    background-color: #60a5fa;
+}
+
+h1 {
+    margin: 1rem;
+    font-weight: normal;
+    color: lightgoldenrodyellow;
+   text-align: center;
+    padding-top: 1.5rem;
+}
+h2 {
+    margin: 1rem;
+    font-weight: normal;
+    color: #cccccc;
+}
+
+.question  {
+    margin: 3rem;
+    background: #323c71;
+    border-radius: 12px;
+
+}
+
+.question-fieldset {
+    margin: 2rem;
+    padding: 15px;
+    background: #60a5fa;
+
+}
+
+
+
+.answers-input{
+    padding-left: 3rem;
+}
+
+.question-button {
+    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#button-next {
+    background-color: cornflowerblue; /* Green */
+    border: none;
+    color: #323c71;
+    padding: 15px 32px;
+    margin: 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    vertical-align: middle;
+}
+
+.timer-header {
+    text-align: center;
+    color: #d3d3d3;
+}
+
+.timer {
+    background-color: #323c71;
+    margin: 0 150px 0 ;
+    padding: 20px 0 20px 0;
+    border-radius: 12px;
+}

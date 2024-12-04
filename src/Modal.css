@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Zapobiega przewijaniu w tle */
+    font-family: 'Parkinsans', sans-serif;
+}
+
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(96, 165, 250, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Wyższy niż inne elementy na stronie */
+}
+
+.modalContainer {
+    width: 500px;
+    max-height: 90vh; /* Ograniczenie wysokości modala */
+    overflow-y: auto; /* Dodanie przewijania w pionie */
+    border-radius: 12px;
+    background-color: rgba(96, 165, 250);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    position: relative; /* Dla wewnętrznego układu */
+}
+
+.modalContainer .title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: #323c71;
+}
+
+.modalContainer .body {
+    flex: 1;
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.modalContainer .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.modalContainer .footer button {
+    width: 150px;
+    height: 45px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+p {
+    color: #dddddd;
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
+}
+#cancelBtn {
+    background-color: crimson;
+}
